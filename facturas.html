@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <title>Facturas</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/facturas.css">
+    </head>
+    <body>
+        <header>
+            <!-- Menu lateral -->
+            <nav>
+                <ul>
+                    <li class="titulo"><a href ="index.html">Factura Americana</a></li>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li><a href="clientes.html">Clientes</a></li>
+                    <li><a href="inventario.html">Productos/Servicios</a></li>
+                    <li class="seleccionado"><a href="facturas">Facturas</a></li>
+                    <li><a href="anticipos.html">Anticipos</a></li>
+                    <li><a href="configuracion.html">Configuración</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--barra superior-->
+        <section class="barra">
+            <article>
+                <div class="usuario">
+                    <span class="nombre">Usuario</span>
+                    <a href="login.html"><button class="salir"> Salir</button></a>
+                </div>
+            </article>
+        </section>
+        <section class="contenido">
+        
+            <article>
+                <h1>Facturas</h1>
+                  
+                <div class="agregarnueva">
+                    <a href="crearfactura.html"> <button class="nuevo">+</button></a>
+                </div>
+          
+                <div class="scrolltable">
+                    <table class="tablafacturas">
+                         <tr>
+                            <th>N°</th>
+                            <th>Cliente</th>
+                            <th>Factura</th>
+                            <th>Estado</th>
+                            <th>PDF</th>
+                            <th></th>
+                        </tr>
+                        <tr>
+                            <td>Sample text</td>
+                            <td>Sample text</td>
+                            <td>Sample text</td>
+                            <td>Sample text</td>
+                            <td>Sample text</td>
+                            <td>
+                            <button class="btnmod"><img src="img/editar.png"></button>
+                            <button class="btneliminar"><img src="img/eliminar.png"> </button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </article>
+        </section>
+        <footer>
+        </footer>
+    </body>
+</html>

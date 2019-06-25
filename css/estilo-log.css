@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+body{
+    
+    background-image: url("../img/background-log.png");  
+}
+.tarjeta {
+    font-family: 'Nunito', sans-serif;
+    background-color: darkseagreen;
+    border-style: solid;
+    text-decoration-color: white;
+    border-style: hidden;
+    margin-top: 150px;
+    margin-left: 500px;
+    margin-right: 500px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    align-content: center;
+    
+}
+.tarjeta .textbox {
+    margin-top: 10px;
+  
+}
+.textbox .box{
+    border-radius: 3px;
+    width: 220px;
+    height: 25px;
+    border-style: hidden;
+}
+.tarjeta .titulo {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+.tarjeta .textbox .label {
+    text-align: left;
+}
+.btnLog {
+    font-family: 'Nunito', sans-serif;
+    margin-top: 50px;
+    background-color: aliceblue;
+    border-style: solid;
+    border-width: thin;
+    width: 150px;
+    height: 30px;
+    color: black;
+    border-radius: 5px;
+}

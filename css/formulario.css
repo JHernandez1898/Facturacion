@@ -1,0 +1,58 @@
+.formulario{
+    margin-left: 25%;
+    font-size: 18px;
+    
+}
+#razonsocial{
+    width: 50%;
+}
+.txtbx{
+    
+    border-bottom-style: solid;
+    border-left-style: hidden;
+    border-right-style: hidden;
+    border-top-style: hidden;
+    color: gray;
+    margin-bottom: 4%;
+    height: 3%;
+        
+}
+.txtbx:active{
+    color: black;
+}
+.txtbx:hover{
+    color: black;
+}
+#calle, #colonia {
+      width: 21%;
+}
+#numint,#numext{
+    width: 5%;
+}
+#ciudad, #telefono{
+    width: 22.5%;
+}
+#segurosocial, #ncuenta,#correo{
+    margin-top: 5%;
+    width: 14%;
+}
+#ruta,#verruta{
+width: 17.5%;
+}
+.encabezado{
+    margin-left: 50%;
+    font-size: 24px;
+}
+.btnCliente {
+    margin-top: 5%;
+    background-color: darkgreen;
+    height: 25px;
+    width: 20%;
+    border-radius: 10px;
+    border-style: hidden;
+    color: white;
+    margin-left: 30%;
+}
+.btnCliente:hover{
+    background-color: green;
+}
