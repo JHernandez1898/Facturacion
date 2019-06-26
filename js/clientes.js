@@ -1,18 +1,3 @@
-function AgregarCliente() {
-$('#frmClientes').submit(function(e) {
-    e.preventDefault();
-        $.ajax({
-            type: "POST",
-            url: 'php/ControladorClientes.php',
-            data:  $(this).serialize(),
-            success: function(response)
-            {
-                $("#response").html(response); 
-                location.href="clientes.html";
-            }
-       });
-});
-}
 function MostrarClientes(){
     f = "Eliminar";
     $.ajax({

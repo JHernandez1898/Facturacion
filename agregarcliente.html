@@ -35,7 +35,7 @@
            <h1 class="encabezado">Agregar cliente</h1>
          <article class="formulario">  
             
-             <form id ="frmClientes" method="post">
+             <form id ="frmClientes"  method="post" >
                  Razón social:
                  <input type="text" class="txtbx" id="razonsocial" name="razonsocial" required> 
                  Tax ID: 
@@ -65,14 +65,13 @@
                  Vuelva a introductir la ruta bancaria:
                  <input type="text" class="txtbx" id="verruta" name="verruta" required><br>
                  <input type="hidden" value="AgregarCliente" id="funcion" name="funcion">
-                 <input type="submit" onclick="AgregarCliente()"  class="btnCliente" value="Agregar"><br>
+                 <input type="submit"  class="btnCliente" value="Agregar"><br>
                  <span id="response"> </span>
              </form>
-        </article>
-            
+           </article>
         </section>
         <footer>
         </footer>
     </body>
-    <script type="text/javascript" src="js/clientes.js"></script>
+    <script type="text/javascript" src="js/agregar.js"></script>
 </html>
