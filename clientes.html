@@ -5,8 +5,9 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/estilo.css">
         <link rel="stylesheet" href="css/facturas.css">
+
     </head>
-    <body>
+    <body onload="MostrarClientes()">
         <header>
             <nav>
                 <ul>
@@ -38,31 +39,16 @@
                 </div>
           
                 <div class="scrolltable">
-                    <table class="tablafacturas">
-                            <tr>
-                            <th>N°</th>
-                            <th>Razon Social</th>
-                            <th>Cuentas pendientes</th>
-                            <th>Estado</th>
-                            <th>Agregar anticipo</th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <td>Sample text</td>
-                            <td>Sample text</td>
-                            <td>Sample text</td>
-                            <td>Sample text</td>
-                            <td>Sample text</td>
-                            <td>
-                            <button class="btnmod"><img src="img/editar.png"></button>
-                            <button class="btneliminar"><img src="img/eliminar.png"> </button>
-                            </td>
-                        </tr>
+                    <table class="tablafacturas" id="tbl">
+                     
                     </table>
                 </div>
+              
             </article>
-        </section>s
+        </section>
         <footer>
         </footer>
     </body>
+ <script src="https://code.jquery.com/jquery-1.11.2.js" ></script>
+        <script type="text/javascript" src="js/clientes.js"></script>
 </html>

@@ -64,8 +64,8 @@
                   <input type="text" class="txtbx" id="ruta" name="ruta" required>
                  Vuelva a introductir la ruta bancaria:
                  <input type="text" class="txtbx" id="verruta" name="verruta" required><br>
-                 <input type="submit"  class="btnCliente" value="Agregar"><br>
-                 
+                 <input type="hidden" value="AgregarCliente" id="funcion" name="funcion">
+                 <input type="submit" onclick="AgregarCliente()"  class="btnCliente" value="Agregar"><br>
                  <span id="response"> </span>
              </form>
         </article>
