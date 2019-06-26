@@ -2,8 +2,7 @@
 require_once("ModeloClientes.php");
 include("conexion.php");
 $metodo = $_POST["funcion"];
-
- $idCone = conectar();
+$idCone = conectar();
 switch($metodo){
         case "MostrarClientes": 
             $lstClientes = new ListaClientes();
@@ -63,6 +62,47 @@ switch($metodo){
         else{
             echo mysqli_error($idCone);
         }
+        break;
+    case "BuscarCliente":
+           $id = $_POST["id"];
+            $lstClientes = new ListaClientes();
+            $Arreglo = $lstClientes ->BuscarCliente($id);
+            echo json_encode($Arreglo);
+        break;
+    case "ModificarCliente":
+            mysqli_set_charset($idCone,"utf8");
+            $id = $_POST["id"];
+            $razonsocial = $_POST["razonsocial"];
+            $taxid = $_POST["taxid"];
+            $calle =$_POST["calle"];
+            $numext = $_POST["numext"];
+            $numint = $_POST["numint"];
+            $colonia = $_POST["colonia"];
+            $cp = $_POST["codigop"];
+            $ciudad =$_POST["ciudad"];           
+            $telefono = $_POST["telefono"];
+            $segurosocial = $_POST["segurosocial"];
+            $correoelectronico = $_POST["correo"];
+            $cuenta = $_POST["ncuenta"];
+            $ruta = $_POST["ruta"];
+            $verruta = $_POST["verruta"];
+            if($ruta !=$verruta){
+                echo "El campo de la ruta bancaria no coincide";
+            }else{
+             
+                     $sql  ="UPDATE CLIENTE SET RAZONSOCIAL = '$razonsocial',CALLE = '$calle',NUMINT= '$numint', NUMEXT= '$numext',COLONIA = '$colonia',CP = '$cp',CIUDAD = '$ciudad',NUMTELEFONO= '$telefono',RUTABANCO='$ruta',NUMEROCUENTA='$cuenta',EMAIL='$correoelectronico',TAXID ='$taxid',NSEGURO='$segurosocial' WHERE IDCLIENTE = '$id'";
+    
+                    $query = mysqli_query($idCone,$sql);
+                    if($query){
+                        echo "Se modifico al cliente correctamente";
+                    }
+                    else{
+                        echo mysqli_error($idCone)." ".$sql;
+                    }
+                }
+               
+               
+            
         break;
 }
 ?>

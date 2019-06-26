@@ -28,6 +28,20 @@ class ListaClientes{
         return $arreglo;
         mysqli_close($conexion);
     }
+    function BuscarCliente($id){
+        require_once("conexion.php");
+        $conexion = conectar();
+        $sql = "SELECT * FROM CLIENTE WHERE IDCLIENTE = ".$id;
+        mysqli_set_charset($conexion,'utf8');
+        $resultado  =mysqli_query($conexion,$sql);
+        $arreglo = array();
+        while($F = mysqli_fetch_array($resultado)){
+            $arreglo[]=$F;
+            
+        }
+        return $arreglo;
+        mysql_close($id);
+    }
 }
 
 ?>

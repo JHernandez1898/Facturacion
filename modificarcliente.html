@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <title>Clientes</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="stylesheet" href="css/facturas.css">
+        <link rel="stylesheet" href="css/formulario.css">
+        <script src="https://code.jquery.com/jquery-3.3.1.js" ></script>
+      
+    </head>
+    <body onload ="BuscarCliente()">
+        <header>
+            <nav>
+                <ul>
+                    <li class="titulo"><a href ="index.html">Factura Americana</a></li>
+                    <li><a href="index.html">Dashboard</a></li>
+                    <li class="seleccionado"><a href="clientes.html">Clientes</a></li>
+                    <li><a href="inventario.html">Productos/Servicios</a></li>
+                    <li><a href="facturas">Facturas</a></li>
+                    <li><a href="anticipos.html">Anticipos</a></li>
+                    <li><a href="configuracion.html">Configuración</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="barra">
+            <article>
+                <div class="usuario">
+                    <span class="nombre">Usuario</span>
+                    <a href="login.html"><button class="salir"> Salir</button></a>
+                </div>
+            </article>
+        </section>
+         
+       <section>
+           <h1 class="encabezado">Modificar Cliente</h1>
+         <article class="formulario">  
+            
+             <form id ="frmClientes"  method="post" >
+                 <input type="hidden" id="id" name="id">
+                 Razón social:
+                 <input type="text" class="txtbx" id="razonsocial" name="razonsocial" required> 
+                 Tax ID: 
+                  <input type="text" class="txtbx" id="taxid" name="taxid" required><br>
+                 Calle:
+                  <input type="text" class="txtbx" id="calle" name="calle" required>
+                 Número Ext:
+                  <input type="text" class="txtbx" id="numext" name="numext" required>
+                 Número Int:
+                  <input type="text" class="txtbx" id="numint" name="numint" >
+                 Colonia:
+                  <input type="text" class="txtbx" id="colonia" name ="colonia" required><br>
+                 CP (ZIP):
+                  <input type="text" class="txtbx" id="cp" name="codigop" required>
+                 Ciudad:
+                  <input type="text" class="txtbx" id="ciudad" name="ciudad" required>
+                 Teléfono:
+                  <input type="text" class="txtbx" id ="telefono" name="telefono" required><br>
+                 Seguro social: 
+                  <input type="text" class="txtbx" id="segurosocial" name="segurosocial" required>
+                  Correo electronico: 
+                  <input type="email" class="txtbx" id="correo" name="correo" required>
+                  Número de cuenta:
+                  <input type="text" class="txtbx" id="ncuenta" name="ncuenta" required><br>
+                 Ruta de cuenta bancaria:
+                  <input type="text" class="txtbx" id="ruta" name="ruta" required>
+                 Vuelva a introductir la ruta bancaria:
+                 <input type="text" class="txtbx" id="verruta" name="verruta" required><br>
+                 <input type="hidden" value="ModificarCliente" id="funcion" name="funcion">
+                 <input type="submit" onclick="ModificarCliente()" class="btnMod" value="Modificar"><br>
+                 <span id="response"> </span>
+             </form>
+           </article>
+        </section>
+        <footer>
+        </footer>
+    </body>
+      <script type="text/javascript" src="js/clientes.js"></script>
+</html>
