@@ -47,14 +47,14 @@ function BuscarCliente(){
                 $("#numext").val(val[i][4]);
                 $("#colonia").val(val[i][5]);   
                 $("#cp").val(val[i][6]);
-                $("#ciudad").val(val[i][7]);
-                $("#telefono").val(val[i][8]);
-                $("#ruta").val(val[i][9]);
-                $("#verruta").val(val[i][9]);
-                $("#ncuenta").val(val[i][10]);
-                $("#correo").val(val[i][11]);
-                $("#taxid").val(val[i][12]);
-                $("#segurosocial").val(val[i][13]);
+                $("#ciudad").val(val[i][8]);
+                $("#telefono").val(val[i][9]);
+                $("#ruta").val(val[i][10]);
+                $("#verruta").val(val[i][10]);
+                $("#ncuenta").val(val[i][11]);
+                $("#correo").val(val[i][12]);
+                $("#taxid").val(val[i][13]);
+                $("#segurosocial").val(val[i][14]);
                 
             }
         }

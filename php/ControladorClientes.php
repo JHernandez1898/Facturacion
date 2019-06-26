@@ -36,7 +36,7 @@ switch($metodo){
                 $pos = strpos($correoelectronico,$ar);
                 $pos2 = strpos($correoelectronico,$dot);
                 if($pos&&$dot){
-                     $sql  ="INSERT INTO cliente (RAZONSOCIAL,CALLE,NUMINT, NUMEXT,COLONIA,CP,CIUDAD,NUMTELEFONO,RUTABANCO,NUMEROCUENTA,EMAIL,TAXID,NSEGURO) VALUES ('$razonsocial','$calle','$numint','$numext','$colonia','$cp','$ciudad','$telefono','$ruta','$cuenta','$correoelectronico','$taxid','$segurosocial')";
+                     $sql  ="INSERT INTO clientes (RAZONSOCIAL,CALLE,NUMINT, NUMEXT,COLONIA,CP,CIUDAD,NUMTELEFONO,RUTABANCO,NUMEROCUENTA,EMAIL,TAXID,NSEGURO) VALUES ('$razonsocial','$calle','$numint','$numext','$colonia','$cp','$ciudad','$telefono','$ruta','$cuenta','$correoelectronico','$taxid','$segurosocial')";
     
                     $query = mysqli_query($idCone,$sql);
                     if($query){
@@ -55,7 +55,7 @@ switch($metodo){
         case "Eliminar":
             $idcli = $_POST["id"];
             echo $idcli;
-            $sql = "DELETE FROM CLIENTE WHERE IDCLIENTE ='".$idcli."'";
+            $sql = "DELETE FROM CLIENTES WHERE IDCLIENTE ='".$idcli."'";
             $query = mysqli_query($idCone,$sql);
         if($query){
             echo"Se elimino al cliente correctamente";}

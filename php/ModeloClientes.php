@@ -18,7 +18,7 @@ class ListaClientes{
     function MostrarClientes(){
         require_once("conexion.php");
         $conexion = conectar();
-        $sql =  "SELECT IDCLIENTE,RAZONSOCIAL FROM CLIENTE";
+        $sql =  "SELECT IDCLIENTE,RAZONSOCIAL FROM CLIENTES";
         mysqli_set_charset($conexion, 'utf8');
         $resultados = mysqli_query($conexion,$sql);
         $arreglo = array();
@@ -31,7 +31,7 @@ class ListaClientes{
     function BuscarCliente($id){
         require_once("conexion.php");
         $conexion = conectar();
-        $sql = "SELECT * FROM CLIENTE WHERE IDCLIENTE = ".$id;
+        $sql = "SELECT * FROM CLIENTES WHERE IDCLIENTE = ".$id;
         mysqli_set_charset($conexion,'utf8');
         $resultado  =mysqli_query($conexion,$sql);
         $arreglo = array();
