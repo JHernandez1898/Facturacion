@@ -90,7 +90,7 @@ switch($metodo){
                 echo "El campo de la ruta bancaria no coincide";
             }else{
              
-                     $sql  ="UPDATE CLIENTE SET RAZONSOCIAL = '$razonsocial',CALLE = '$calle',NUMINT= '$numint', NUMEXT= '$numext',COLONIA = '$colonia',CP = '$cp',CIUDAD = '$ciudad',NUMTELEFONO= '$telefono',RUTABANCO='$ruta',NUMEROCUENTA='$cuenta',EMAIL='$correoelectronico',TAXID ='$taxid',NSEGURO='$segurosocial' WHERE IDCLIENTE = '$id'";
+                     $sql  ="UPDATE CLIENTES SET RAZONSOCIAL = '$razonsocial',CALLE = '$calle',NUMINT= '$numint', NUMEXT= '$numext',COLONIA = '$colonia',CP = '$cp',CIUDAD = '$ciudad',NUMTELEFONO= '$telefono',RUTABANCO='$ruta',NUMEROCUENTA='$cuenta',EMAIL='$correoelectronico',TAXID ='$taxid',NSEGURO='$segurosocial' WHERE IDCLIENTE = '$id'";
     
                     $query = mysqli_query($idCone,$sql);
                     if($query){
