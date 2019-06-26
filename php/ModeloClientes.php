@@ -18,7 +18,7 @@ class ListaClientes{
     function MostrarClientes(){
         require_once("conexion.php");
         $conexion = conectar();
-        $sql =  "SELECT IDCLIENTE,RAZONSOCIAL FROM CLIENTE";
+        $sql =  "SELECT IDCLIENTE,RAZONSOCIAL FROM CLIENTES";
         mysqli_set_charset($conexion, 'utf8');
         $resultados = mysqli_query($conexion,$sql);
         $arreglo = array();
@@ -27,6 +27,20 @@ class ListaClientes{
         }
         return $arreglo;
         mysqli_close($conexion);
+    }
+    function BuscarCliente($id){
+        require_once("conexion.php");
+        $conexion = conectar();
+        $sql = "SELECT * FROM CLIENTES WHERE IDCLIENTE = ".$id;
+        mysqli_set_charset($conexion,'utf8');
+        $resultado  =mysqli_query($conexion,$sql);
+        $arreglo = array();
+        while($F = mysqli_fetch_array($resultado)){
+            $arreglo[]=$F;
+            
+        }
+        return $arreglo;
+        mysql_close($id);
     }
 }
 

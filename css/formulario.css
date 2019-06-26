@@ -56,3 +56,16 @@ width: 17.5%;
 .btnCliente:hover{
     background-color: green;
 }
+.btnMod{
+      margin-top: 5%;
+    background-color: darkgoldenrod;
+    height: 25px;
+    width: 20%;
+    border-radius: 10px;
+    border-style: hidden;
+    color: white;
+    margin-left: 30%;
+}
+.btnMod:hover{
+    background-color: goldenrod;
+}
