@@ -1,13 +1,14 @@
 function AgregarCliente() {
 $('#frmClientes').submit(function(e) {
+    e.preventDefault();
         $.ajax({
             type: "POST",
             url: 'php/ControladorClientes.php',
             data:  $(this).serialize(),
             success: function(response)
             {
-               alert(response);
-               location.href="clientes.html";
+                $("#response").html(response); 
+                location.href="clientes.html";
             }
        });
 });
@@ -30,7 +31,6 @@ function MostrarClientes(){
     });
 }
 function EliminarCliente(idcli){
- 
     $.ajax({
         url:"php/ControladorClientes.php",
         method:"POST",
@@ -40,4 +40,5 @@ function EliminarCliente(idcli){
             location.href="clientes.html";
         }
     });
+   
 }
