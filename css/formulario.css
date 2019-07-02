@@ -69,3 +69,30 @@ width: 17.5%;
 .btnMod:hover{
     background-color: goldenrod;
 }
+.btnProducto{
+    margin-top: 5%;
+    background-color: darkgreen;
+    height: 25px;
+    width: 15%;
+    border-radius: 10px;
+    border-style: hidden;
+    color: white;
+    margin-left: 25%;
+}
+#codigo{
+    width: 50%;
+    
+}
+#precio{
+    width: 30%;
+}
+#descripcion{
+    width: 60%;
+    height: 100px;
+    border-radius: 10px;
+}
+select{
+    height: 30px;
+    border-radius: 10px;
+    width: 20%;
+}

@@ -3,23 +3,22 @@
     <head>
         <title>Clientes</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="css/estilo.css">
-        <link rel="stylesheet" href="css/facturas.css">
-        <link rel="stylesheet" href="css/formulario.css">
+        <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="stylesheet" href="../css/facturas.css">
+        <link rel="stylesheet" href="../css/formulario.css">
         <script src="https://code.jquery.com/jquery-3.3.1.js" ></script>
-      
     </head>
-    <body onload ="BuscarCliente()">
+    <body>
         <header>
             <nav>
                 <ul>
-                    <li class="titulo"><a href ="index.html">Factura Americana</a></li>
-                    <li><a href="index.html">Dashboard</a></li>
+                   <li class="titulo"><a href ="../index.html">Factura Americana</a></li>
+                    <li><a href="../index.html">Dashboard</a></li>
                     <li class="seleccionado"><a href="clientes.html">Clientes</a></li>
-                    <li><a href="inventario.html">Productos/Servicios</a></li>
-                    <li><a href="facturas">Facturas</a></li>
-                    <li><a href="anticipos.html">Anticipos</a></li>
-                    <li><a href="configuracion.html">Configuración</a></li>
+                    <li><a href="../Inventarios/inventario.html">Productos/Servicios</a></li>
+                    <li><a href="../Facturacion/facturas.html">Facturas</a></li>
+                    <li><a href="../Anticipos/anticipos.html">Anticipos</a></li>
+                    <li><a href="../Configuracion/configuracion.html">Configuración</a></li>
                 </ul>
             </nav>
         </header>
@@ -33,11 +32,10 @@
         </section>
          
        <section>
-           <h1 class="encabezado">Modificar Cliente</h1>
+           <h1 class="encabezado">Agregar cliente</h1>
          <article class="formulario">  
             
              <form id ="frmClientes"  method="post" >
-                 <input type="hidden" id="id" name="id">
                  Razón social:
                  <input type="text" class="txtbx" id="razonsocial" name="razonsocial" required> 
                  Tax ID: 
@@ -54,7 +52,7 @@
                   <input type="text" class="txtbx" id="cp" name="codigop" required>
                  Ciudad:
                   <input type="text" class="txtbx" id="ciudad" name="ciudad" required>
-                 Teléfono:
+                 Telefono:
                   <input type="text" class="txtbx" id ="telefono" name="telefono" required><br>
                  Seguro social: 
                   <input type="text" class="txtbx" id="segurosocial" name="segurosocial" required>
@@ -66,8 +64,8 @@
                   <input type="text" class="txtbx" id="ruta" name="ruta" required>
                  Vuelva a introductir la ruta bancaria:
                  <input type="text" class="txtbx" id="verruta" name="verruta" required><br>
-                 <input type="hidden" value="ModificarCliente" id="funcion" name="funcion">
-                 <input type="submit" onclick="ModificarCliente()" class="btnMod" value="Modificar"><br>
+                 <input type="hidden" value="AgregarCliente" id="funcion" name="funcion">
+                 <input type="submit"  class="btnCliente" value="Agregar"><br>
                  <span id="response"> </span>
              </form>
            </article>
@@ -75,5 +73,5 @@
         <footer>
         </footer>
     </body>
-      <script type="text/javascript" src="js/clientes.js"></script>
+    <script type="text/javascript" src="../js/agregar.js"></script>
 </html>
