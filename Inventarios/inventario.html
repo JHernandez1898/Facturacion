@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <title>Productos y Servicios</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/estilo.css">
+        <link rel="stylesheet" href="../css/facturas.css">
+        <script src="https://code.jquery.com/jquery-1.11.2.js" ></script>
+        <script type="text/javascript" src= "../js/inventarios.js"></script>
+       
+        
+    </head>
+    <body onload="MostrarProductos()">
+        <header>
+            <nav>
+                <ul>
+                    <li class="titulo"><a href ="index.html">Factura Americana</a></li>
+                    <li><a href="../index.html">Dashboard</a></li>
+                    <li><a href="../Clientes/clientes.html">Clientes</a></li>
+                    <li  class="seleccionado"><a href="inventario.html">Productos/Servicios</a></li>
+                    <li><a href="../Facturacion/facturas">Facturas</a></li>
+                    <li><a href="../Anticipos/anticipos.html">Anticipos</a></li>
+                    <li><a href="../Configuracion/configuracion.html">Configuración</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section class="barra">
+            <article>
+                <div class="usuario">
+                    <span class="nombre">Usuario</span>
+                    <a href="login.html"><button class="salir"> Salir</button></a>
+                </div>
+            </article>
+        </section>
+               <section class="contenido">
+        
+            <article>
+                <h1>Productos/Servicios</h1>
+                  
+                <div class="agregarnueva">
+                    <a href="agregarproducto.html"> <button class="nuevo" >+</button></a>
+                </div>
+                <div class="scrolltable">
+                    <table class="tablafacturas" id="tbl">         
+                    </table>
+                </div>
+            </article>
+        </section>
+        <footer>
+        </footer>
+        
+    </body>
+   
+</html>
